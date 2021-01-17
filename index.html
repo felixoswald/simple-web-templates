@@ -1,0 +1,138 @@
+<html>
+	<head>
+		<style>
+			html {
+				font-family: Calibri;
+				background-color: #7f8c8d;
+			}
+			.msg {
+				position: fixed;
+				top: 30px;
+				width: 480px;
+				height: 20px;
+				left: calc(50% - 250px);
+				background-color: #e67e22;
+				color: black;
+				padding: 10px;
+				font-size: 13pt;
+				font-weight: 700;
+			}
+			.msg i {
+				position: absolute;
+				top: 9px;
+				right: 9px;
+				font-size: 16pt;
+				cursor: pointer;
+			}
+			form {
+				position: fixed;
+				top: 100px;
+				width: 500px;
+				height: 320px;
+				border: 1px solid #333;
+				left: calc(50% - 250px);
+				background-color: white;
+			}
+			.header {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				width: 100%;
+				height: 50px;
+				background-color: #333;
+				color: white;
+				text-align: center;
+			}
+			.header h1 {
+				margin: 0px;
+				padding: 0px;
+				margin-top: 5px;
+			}
+			p {
+				position: absolute;
+				top: 60px;
+				left: 0px;
+				width: 100%;
+				height: 50px;
+				text-align: center;
+				font-size: 13pt;
+			}
+			.eingabe {
+				position: absolute;
+				top: 90px;
+				left: 0px;
+				width: 100%;
+				height: calc(100% - 120px);
+				text-align: center;
+			}
+			.eingabe .fa-user {
+				position: absolute;
+				top: 50px;
+				left: 30px;
+				font-size: 14pt;
+				color: #333;
+			}
+			.eingabe .fa-key {
+				position: absolute;
+				top: 110px;
+				left: 30px;
+				font-size: 14pt;
+				color: #333;
+			}
+			.eingabe input[name=username] {
+				position: absolute;
+				top: 40px;
+				left: 60px;
+			}
+			.eingabe input[name=passwort] {
+				position: absolute;
+				top: 100px;
+				left: 60px;
+			}
+			.eingabe input[type=text], input[type=password] {
+				padding: 8px;
+				width: calc(100% - 100px);
+				font-size: 13pt;
+				border: 0px;
+				height: 40px;
+				background-color: #bdc3c7;
+				color: #333;
+			}
+			.eingabe input[type=submit] {
+				position: absolute;
+				top: 160px;
+				right: 40px;
+				width: 130px;
+				height: 40px;
+				background-color: #333;
+				border: 2px solid #333;
+				color: white;
+				font-weight: 700;
+				cursor: pointer;
+				font-size: 12pt;
+			}
+			.eingabe input[type=submit]:hover {
+				background-color: white;
+				color: #333;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- <div class="msg logout">Du wurdest erfolgreich abgemeldet.<i class="fas fa-times" onclick="$('.logout').fadeOut();"></i></div>
+		<div class="msg wrong">Der Benutzername und/oder das Passwort sind falsch!<i class="fas fa-times" onclick="$('.wrong').fadeOut();"></i></div>
+		<div class="msg inaktiv">Dein Benutzerkonto ist deaktiviert!<i class="fas fa-times" onclick="$('.inaktiv').fadeOut();"></i></div>
+		<div class="msg nologin">Mit diesem Benutzerkonto ist keine Anmeldung möglich!<i class="fas fa-times" onclick="$('.nologin').fadeOut();"></i></div> -->
+
+		<form id="login" method="post" action="#" autocomplete="off">
+			<div class="header">
+				<h1>Login</h1>
+			</div>
+			<p>Bitte melde dich mit Benutzername und Passwort an.</p>
+			<div class="eingabe">
+				<i class="fas fa-user"></i><input type="text" required="true" name="username" placeholder="Benutzername" value=""><br>
+				<i class="fas fa-key"></i><input type="password" required="true" name="passwort" placeholder="Passwort" value=""><br>
+				<input type="submit" value="Anmelden">
+			</div>
+		</form>
+	</body>
+</html>
