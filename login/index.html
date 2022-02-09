@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<style>
+			form {
+				font-family: Helvetica;
+				width: fit-content;
+				padding: 20px;
+				border: 1px solid #333;
+				background-color: white;
+				text-align: center;
+			}
+			form > img {
+				width: 100px;
+			}
+			form > input {
+				padding: 8px;
+				width: 300px;
+				font-size: 13pt;
+				margin-bottom: 5px;
+				background-color: #bbbbbb;
+				border: 1px solid #bbbbbb;
+			}
+			form > input[type=submit] {
+				font-weight: 700;
+				margin-top: 20px;
+				width: 50%;
+			}
+			form > input[type=submit]:hover {
+				cursor: pointer;
+				background-color: transparent;
+			}
+		</style>
+	</head>
+	<body>
+		<form id="login" method="post" action="#" autocomplete="off">
+			<img src="data:image/png;base64,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"/><br>
+			<h1>Login</h1>
+			<input type="text" required="true" name="username" placeholder="Benutzername" value="" autofocus><br>
+			<input type="password" required="true" name="passwort" placeholder="Passwort" value=""><br>
+			<input type="submit" value="Anmelden">
+		</form>
+	</body>
+</html>
